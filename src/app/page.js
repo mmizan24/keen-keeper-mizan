@@ -37,10 +37,11 @@ export default function HomePage() {
       {/* Banner Section */}
       <section className="text-center space-y-6 pt-8 pb-4">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
-          Keep Your Friendships Alive
+          Friends to keep close in your life
         </h1>
         <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-          Never lose touch again. Track your interactions, set contact goals, and nurture the relationships that matter most.
+          Your personal shelf of meaningful connections. Browse, tend, and nurture the
+          relationships that matter most.
         </p>
         <div className="pt-2">
           <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-sm">
