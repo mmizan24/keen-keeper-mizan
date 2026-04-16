@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from "next/image";
+
 import { Plus, Users, AlertCircle, Clock, CheckCircle } from 'lucide-react';
 import { useAppContext } from '@/context/AppContext';
 
@@ -44,7 +46,7 @@ export default function HomePage() {
           relationships that matter most.
         </p>
         <div className="pt-2">
-          <button className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-sm">
+          <button className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-sm">
             <Plus size={20} />
             <span>Add a Friend</span>
           </button>
@@ -105,9 +107,11 @@ export default function HomePage() {
                 <div className={`h-2 w-full ${getStatusDot(friend.status)}`}></div>
                 <div className="p-5 flex-grow flex flex-col items-center text-center">
                   <div className="relative mb-4">
-                    <img
+                    <Image
                       src={friend.picture}
                       alt={friend.name}
+                      width={80}
+                      height={80}
                       className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-sm"
                     />
                     <div className={`absolute bottom-0 right-0 w-5 h-5 rounded-full border-2 border-white ${getStatusDot(friend.status)}`}></div>
